@@ -11,7 +11,7 @@ These projects reflect my daily work helping universities and research organizat
 ## 📌 Completed Projects
 
 ### 1. RAG‑Based Chatbot for Institutional Repositories
-[`rag-chatbot`](https://github.com/luis-enrique-lescano/rag-chatbot) | [Demo (if available)]()
+[`rag-chatbot`](https://github.com/luis575497/chatbot-rag-fastapi) 
 
 A conversational assistant built with **Retrieval-Augmented Generation (RAG)** that answers natural language questions about library collections and research outputs.  
 - Uses **FastAPI** for the backend and a **JavaScript widget** for easy embedding  
