@@ -8,42 +8,57 @@ These projects reflect my daily work helping universities and research organizat
 
 ---
 
-## 📌 Projects
+## 📌 Completed Projects
 
-### 1. Metadata Automation for Repositories (DSpace / OpenAIRE)
-[`metadata-automation/transform_metadata.ipynb`](metadata-automation/transform_metadata.ipynb)
+### 1. RAG‑Based Chatbot for Institutional Repositories
+[`rag-chatbot`](https://github.com/luis-enrique-lescano/rag-chatbot) | [Demo (if available)]()
+
+A conversational assistant built with **Retrieval-Augmented Generation (RAG)** that answers natural language questions about library collections and research outputs.  
+- Uses **FastAPI** for the backend and a **JavaScript widget** for easy embedding  
+- Implements intent classification (FAQ, search, greeting) and session memory  
+- Leverages **ChromaDB** for vector storage and **Ollama** (llama3) for LLM  
+- Supports ingestion of PDF, DOCX, CSV, TXT, and Excel files  
+
+**Tech:** Python, FastAPI, LangChain, ChromaDB, Ollama, JavaScript  
+
+---
+
+## 🚧 Projects in Development
+
+### 2. Metadata Automation for Repositories (DSpace / OpenAIRE)
+*Coming soon*
 
 Automates the transformation of raw metadata (CSV/Excel) into ingestion formats compatible with **DSpace** and **OpenAIRE 4.0**.  
-- Cleans and normalises author names, dates, and identifiers  
-- Maps to Dublin Core and local DSpace schemas  
-- Validates compliance with FAIR principles  
-- Reduces manual processing time by ~40%
+- Clean and normalise author names, dates, and identifiers  
+- Map to Dublin Core and local DSpace schemas  
+- Validate compliance with FAIR principles  
+- Reduce manual processing time by ~40%  
 
 **Tech:** Python, pandas, CSV, JSON
 
 ---
 
-### 2. Repository Harvesting & Analytics with OAI-PMH
-[`oai-pmh-analysis/harvest_repository.ipynb`](oai-pmh-analysis/harvest_repository.ipynb)
+### 3. Repository Harvesting & Analytics with OAI-PMH
+*Planned*
 
-Harvests metadata from any OAI‑PMH endpoint and builds interactive visualisations to support institutional decision‑making.  
-- Retrieves records using the `Sickle` library  
-- Parses XML and extracts key metrics (publications/year, downloads, open access rate)  
-- Generates time‑series plots and collaboration maps  
-- Provides a ready‑to‑use dashboard for research visibility
+Harvest metadata from any OAI‑PMH endpoint and build interactive visualisations to support institutional decision‑making.  
+- Retrieve records using the `Sickle` library  
+- Parse XML and extract key metrics (publications/year, downloads, open access rate)  
+- Generate time‑series plots and collaboration maps  
+- Provide a ready‑to‑use dashboard for research visibility  
 
-**Tech:** Python, Sickle, pandas, matplotlib, plotly
+**Tech:** Python, Sickle, pandas, matplotlib, plotly (or Streamlit)
 
 ---
 
-### 3. AI‑Assisted Data Management Plan (DMP) Generator
-[`dmp-assistant/dmp_assistant.ipynb`](dmp-assistant/dmp_assistant.ipynb)
+### 4. AI‑Assisted Data Management Plan (DMP) Generator
+*Planned*
 
 An interactive notebook that helps researchers create a **Data Management Plan** aligned with funder requirements (e.g., Horizon Europe, NSF).  
-- Uses `ipywidgets` for a simple Q&A interface  
-- Suggests best practices based on the researcher’s answers  
-- Automatically generates a structured DMP in Markdown  
-- Checks completeness against mandatory elements (persistent identifiers, data sharing, archiving)
+- Use `ipywidgets` for a simple Q&A interface  
+- Suggest best practices based on the researcher’s answers  
+- Automatically generate a structured DMP in Markdown  
+- Check completeness against mandatory elements (persistent identifiers, data sharing, archiving)  
 
 **Tech:** Python, ipywidgets, Jinja2 templates, (optional) OpenAI API for advanced recommendations
 
@@ -71,13 +86,13 @@ Currently, I am a PhD candidate researching the evolution of knowledge systems i
 
 ## 🔧 How to Use This Repository
 
-Each project folder contains:
+Each project folder (when available) contains:
 - A Jupyter Notebook (`.ipynb`) with step‑by‑step code and explanations  
 - A `README.md` inside the folder with specific setup instructions  
 - Sample data (or instructions to fetch open data) for reproducibility
 
 **Requirements:**  
-Python 3.9+ with packages listed in `requirements.txt` (coming soon).  
+Python 3.9+ with packages listed in `requirements.txt` (to be added).  
 You can run the notebooks locally or in Google Colab.
 
 ---
